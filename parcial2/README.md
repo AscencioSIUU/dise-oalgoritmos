@@ -52,3 +52,7 @@ python3 hacer_sencillo.py
 python3 knapsack.py
 python3 nokia.py
 ```
+
+## Video de demostración
+
+> Enlace: *(LINK)*
