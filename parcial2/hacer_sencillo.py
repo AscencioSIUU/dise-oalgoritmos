@@ -40,42 +40,24 @@ def mostrar_caso(numero, m, descripcion):
     print()
 
 
-def main():
+def run():
     print()
     print("╔══════════════════════════════════════════════════════════╗")
     print("║         ALGORITMO GREEDY — HACER SENCILLO                ║")
     print("║   Denominaciones: {1, 5, 10, 25} centavos                ║")
-    print("║   Paradigma: Greedy (selección voraz en orden desc.)      ║")
+    print("║   Paradigma: Greedy (seleccion voraz en orden desc.)      ║")
     print("╚══════════════════════════════════════════════════════════╝")
 
-    # Caso 1: instancia del examen
-    mostrar_caso(
-        1, 293,
-        "Instancia del examen (Q2.93)"
-    )
-
-    # Caso 2: monto que NO se puede cubrir eficientemente con denominaciones menores
-    mostrar_caso(
-        2, 99,
-        "Maximo sin llegar a Q1.00 (99¢)"
-    )
-
-    # Caso 3: monto que obliga a usar solo monedas de 1 (sin multiplos de 5/10/25)
-    mostrar_caso(
-        3, 41,
-        "Monto sin multiplos de 5 (41¢)"
-    )
+    mostrar_caso(1, 293, "Instancia del examen (Q2.93)")
+    mostrar_caso(2, 99,  "Maximo sin llegar a Q1.00 (99¢)")
+    mostrar_caso(3, 41,  "Monto sin multiplos de 5 (41¢)")
 
     print("=" * 60)
     print("  Complejidad temporal: O(|D|) = O(4) = O(1)")
     print("  Complejidad espacial: O(|D|) = O(1)")
-    print("  Propiedad greedy: la eleccion local optima (moneda")
-    print("  mas grande que cabe) produce el optimo global porque")
-    print("  las denominaciones {1,5,10,25} satisfacen la")
-    print("  greedy-choice property sobre los enteros positivos.")
     print("=" * 60)
     print()
 
 
 if __name__ == "__main__":
-    main()
+    run()
