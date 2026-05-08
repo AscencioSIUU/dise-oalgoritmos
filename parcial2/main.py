@@ -1,15 +1,17 @@
 import hacer_sencillo
 import knapsack
+import nokia
 
 
 def menu():
     print()
     print("╔══════════════════════════════════════════════╗")
-    print("║         PARCIAL 2 — ALGORITMOS GREEDY        ║")
+    print("║            PARCIAL 2 — ALGORITMOS            ║")
     print("╠══════════════════════════════════════════════╣")
     print("║  1. Hacer Sencillo (cambio de monedas)       ║")
     print("║  2. Knapsack Fraccionado                     ║")
-    print("║  3. Ambos                                    ║")
+    print("║  3. Nokia 3230 Combinaciones                 ║")
+    print("║  4. Todos                                    ║")
     print("║  0. Salir                                    ║")
     print("╚══════════════════════════════════════════════╝")
     print()
@@ -25,8 +27,11 @@ def main():
         elif opcion == "2":
             knapsack.run()
         elif opcion == "3":
+            nokia.run()
+        elif opcion == "4":
             hacer_sencillo.run()
             knapsack.run()
+            nokia.run()
         elif opcion == "0":
             print("\n  Saliendo...\n")
             break
